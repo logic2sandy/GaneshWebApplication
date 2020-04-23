@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registration Form</title>
+        <SCRIPT type="text/javascript" src="myJs.js">
+     </SCRIPT>
+    </head>
+    <body>
+    <center><h1>Student Registration Form</h1></center>
+        <form method="post" action="singnUp.jsp" name="myform" onsubmit="return validateform()">
+          <table align="center" border="2px">
+              <tr><th><b>Roll Number</b></th>
+                  <td><input type="text" name="roll" value=""></td></tr>
+              <tr><th><b>First Name</b></th>
+                  <td><input type="text" name="f_name"  value=""> </td></tr>
+              <tr><th><b>Second Name</b></th>
+                  <td><input type="text" name="l_name" value=""></td></tr>
+              <tr><th><b>Address</b></th>
+                  <td><textarea name="address" rows="5" cols="8"></textarea></td></tr>
+              <tr><th><b>Gender</b></th>
+                  <td>Male<input type="radio" name="gender" value="male">
+                      Female<input type="radio" name="gender" value="Female">
+                  </td></tr>
+              <tr><th><b>city</b></th>
+                  <td><select name="city" >
+                          <option> </option>
+                          <option>Agra</option>
+                          <option>Lucknow</option>
+                          <option>kanpur</option>
+                          <option>Banaras</option>
+                          <option>Allahabad</option>
+                      </select>
+                  </td></tr>
+              <tr><th><b>Subject</b></th>
+                  <td>Hindi<input type="checkbox" name="subject" value="hindi">
+                      English<input type="checkbox" name="subject" value="English">
+                      Maths<input type="checkbox" name="subject" value="maths">
+                  </td></tr>
+              <tr><th><b>Mobile number</b></th>
+                  <td><input type="text" name="mobile" value=""></td></tr>
+              <tr><th><b>User Id</b></th>
+                  <td><input type="text" name="user_id" value=""></td></tr>
+              <tr><th><b>Password</b></th>
+                  <td><input type="password" name="pass" value=""></td></tr>
+               <tr><th><b>User type</b></th>
+                  <td><input type="text" name="user_t" value=""></td></tr>
+              <tr><td>
+                      
+                  <input type="submit" value="submit">
+                  <input type="reset" value="reset">
+                  </td></tr>
+          </table> 
+            <br>
+            
+        </form>    
+    </body>
+</html>
+
